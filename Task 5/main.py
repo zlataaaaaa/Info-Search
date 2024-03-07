@@ -6,7 +6,7 @@ from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 
-from vector_search import VectorSearch
+from vector import VectorSearch
 
 templates = Jinja2Templates(directory=path.dirname(__file__) + '/templates')
 app = FastAPI()
